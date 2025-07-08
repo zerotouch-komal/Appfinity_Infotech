@@ -2669,9 +2669,6 @@
 						data-id="3e376b97" data-element_type="widget" data-widget_type="image-box.default">
 						<div class="elementor-widget-container">
 							<div class="elementor-image-box-wrapper">
-								<figure class="elementor-image-box-img"><img loading="lazy" width="512" height="512"
-										src="https://www.verdantis.com/wp-content/uploads/2025/07/customer-service-2.png"
-										class="attachment-full size-full wp-image-33853" alt="" /></figure>
 								<div class="elementor-image-box-content">
 									<p class="elementor-image-box-title">Our team will reach out to you via email within
 										24-48 hours to understand your requirements</p>
@@ -2917,314 +2914,7 @@
 											</div>
 										</div>
 
-										<div class="elementor-element elementor-element-df7887a e-con-full form1 e-flex e-con e-child"
-											data-id="df7887a" data-element_type="container"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-											<div class="elementor-element elementor-element-79d0751 e-con-full form1 e-flex e-con e-child"
-												data-id="79d0751" data-element_type="container"
-												data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-												<div class="elementor-element elementor-element-71a17ba e-con-full e-flex e-con e-child"
-													data-id="71a17ba" data-element_type="container">
-													<div class="elementor-element elementor-element-a60c3d5 elementor-widget elementor-widget-heading"
-														data-id="a60c3d5" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<span
-																class="elementor-heading-title elementor-size-default">
-																Schedule a Consultation with Our Materials Master Data
-																Expert
-															</span>
-														</div>
-
-													</div>
-													<div class="elementor-element elementor-element-f4b9044 elementor-widget elementor-widget-heading"
-														data-id="f4b9044" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<span
-																class="elementor-heading-title elementor-size-default">
-																Proof of Concept Using Your Own Sample Data
-															</span>
-														</div>
-
-													</div>
-												</div>
-												<div class="elementor-element elementor-element-c58eb12 e-con-full e-flex e-con e-child"
-													data-id="c58eb12" data-element_type="container"
-													data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-													<div class="elementor-element elementor-element-9385c34 elementor-widget elementor-widget-metform"
-														data-id="9385c34" data-element_type="widget"
-														data-widget_type="metform.default">
-														<div class="elementor-widget-container">
-															<div id="mf-response-props-id-23691"
-																data-previous-steps-style="" data-editswitchopen=""
-																data-response_type="alert"
-																data-erroricon="fas fa-exclamation-triangle"
-																data-successicon="fas fa-check"
-																data-messageposition="top" class="   mf-scroll-top-no">
-																<div class="formpicker_warper formpicker_warper_editable"
-																	data-metform-formpicker-key="23691">
-
-																	<div class="mf-widget-container">
-
-																		<div id="metform-wrap-9385c34-23691"
-																			class="mf-form-wrapper" data-form-id="23691"
-																			data-action="https://www.verdantis.com/wp-json/metform/v1/entries/insert/23691"
-																			data-wp-nonce="c8c2ac8484"
-																			data-form-nonce="3423a933ec"
-																			data-quiz-summery="false"
-																			data-save-progress="false"
-																			data-form-type="general-form"
-																			data-stop-vertical-effect=""></div>
-
-
-																		<!----------------------------- 
-			* controls_data : find the the props passed indie of data attribute
-			* props.SubmitResponseMarkup : contains the markup of error or success message
-			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-		--------------------------- -->
-
-																		<script type="text/mf" class="mf-template">
-			function controls_data (value){
-				let currentWrapper = "mf-response-props-id-23691";
-				let currentEl = document.getElementById(currentWrapper);
-				
-				return currentEl ? currentEl.dataset[value] : false
-			}
-
-
-			let is_edit_mode = '' ? true : false;
-			let message_position = controls_data('messageposition') || 'top';
-
-			
-			let message_successIcon = controls_data('successicon') || '';
-			let message_errorIcon = controls_data('erroricon') || '';
-			let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false;
-			let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : '';
-			
-			let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false;
-
-			
-			return html`
-				<form
-					className="metform-form-content"
-					ref=${parent.formContainerRef}
-					onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) }
-				
-					>
-			
-			
-					${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-
-					<!--------------------------------------------------------
-					*** IMPORTANT / DANGEROUS ***
-					${html``} must be used as in immediate child of "metform-form-main-wrapper"
-					class otherwise multistep form will not run at all
-					---------------------------------------------------------->
-
-					<div className="metform-form-main-wrapper" key=${'hide-form-after-submit'} ref=${parent.formRef}>
-					${html`
-								<div data-elementor-type="wp-post" key="2" data-elementor-id="23691" className="elementor elementor-23691" data-elementor-post-type="metform-form">
-						<section className="elementor-section elementor-top-section elementor-element elementor-element-477805c elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="477805c" data-element_type="section">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-00e94c5" data-id="00e94c5" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-						<section className="elementor-section elementor-inner-section elementor-element elementor-element-d2693af elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d2693af" data-element_type="section">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-ff58a6e" data-id="ff58a6e" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-						<div className="elementor-element elementor-element-b104bf6 elementor-widget elementor-widget-mf-text" data-id="b104bf6" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-first-name&quot;}" data-widget_type="mf-text.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-			
-			<input
-				type="text"
-				className="mf-input mf-conditional-input"
-				id="mf-input-text-b104bf6"
-				name="mf-first-name"
-				placeholder="${ parent.decodeEntities(`Your name here`) } "
-									onInput=${parent.handleChange}
-					onBlur=${parent.handleChange}
-					aria-invalid=${validation.errors['mf-first-name'] ? 'true' : 'false'}
-					ref=${el =>{
-												parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)
-					}}
-								/>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-first-name"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-			
-					</div>
-
-						</div>
-				</div>
-				<div className="elementor-element elementor-element-bdccbcc elementor-widget elementor-widget-mf-email" data-id="bdccbcc" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-email&quot;}" data-widget_type="mf-email.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-			
-			<input 
-				type="email" 
-				 
-				defaultValue="" 
-				className="mf-input mf-conditional-input" 
-				id="mf-input-email-bdccbcc" 
-				name="mf-email" 
-				placeholder="${ parent.decodeEntities(`Add email`) } " 
-				 
-				onBlur=${parent.handleChange} onFocus=${parent.handleChange} aria-invalid=${validation.errors['mf-email'] ? 'true' : 'false' } 
-				ref=${el=> parent.activateValidation({"message":"This field is required.","emailMessage":"Please enter a valid Email address","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)}
-							/>
-
-						<${validation.ErrorMessage} 
-				errors=${validation.errors} 
-				name="mf-email" 
-				as=${html`<span className="mf-error-message"></span>`}
-			/>
-			
-					</div>
-
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-c9b6106 elementor-widget elementor-widget-mf-text" data-id="c9b6106" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-subject&quot;}" data-widget_type="mf-text.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-			
-			<input
-				type="text"
-				className="mf-input mf-conditional-input"
-				id="mf-input-text-c9b6106"
-				name="mf-subject"
-				placeholder="${ parent.decodeEntities(`Company`) } "
-									onInput=${parent.handleChange}
-					onBlur=${parent.handleChange}
-					aria-invalid=${validation.errors['mf-subject'] ? 'true' : 'false'}
-					ref=${el =>{
-												parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)
-					}}
-								/>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-subject"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-			
-					</div>
-
-						</div>
-				</div>
-				<div className="elementor-element elementor-element-2d6695d elementor-widget elementor-widget-mf-telephone" data-id="2d6695d" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-telephone&quot;}" data-widget_type="mf-telephone.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-			
-			<input
-				type="tel"
-				className="mf-input "
-				id="mf-input-telephone-2d6695d" 
-				name="mf-telephone"
-				placeholder="${ parent.decodeEntities(`Contact Number`) } "
-									onInput=${parent.handleChange}
-					aria-invalid=${validation.errors['mf-telephone'] ? 'true' : 'false'}
-					ref=${el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)}
-								/>
-			
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-telephone"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-			
-			
-		</div>
-
-						</div>
-				</div>
-				<div className="elementor-element elementor-element-ec8264c elementor-widget elementor-widget-mf-text" data-id="ec8264c" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-text-message01&quot;}" data-widget_type="mf-text.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-			
-			<input
-				type="text"
-				className="mf-input "
-				id="mf-input-text-ec8264c"
-				name="mf-text-message01"
-				placeholder="${ parent.decodeEntities(`Message`) } "
-									onInput=${parent.handleChange}
-					onBlur=${parent.handleChange}
-					aria-invalid=${validation.errors['mf-text-message01'] ? 'true' : 'false'}
-					ref=${el =>{
-												parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)
-					}}
-								/>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-text-message01"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-			
-					</div>
-
-						</div>
-				</div>
-				<div className="elementor-element elementor-element-e5e6be7 elementor-widget__width-auto elementor-widget elementor-widget-mf-button" data-id="e5e6be7" data-element_type="widget" data-widget_type="mf-button.default">
-				<div className="elementor-widget-container">
-							<div className="mf-btn-wraper mf-conditional-input" data-mf-form-conditional-logic-requirement="">
-							<button type="submit" className="metform-btn metform-submit-btn " id="">
-					<span>${ parent.decodeEntities(`Send Message`) } </span>
-				</button>
-			        </div>
-        				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-							`}
-					</div>
-
-					${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-				
-				</form>
-			`
-		</script>
-
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-66fdbc6 elementor-widget elementor-widget-heading"
-														data-id="66fdbc6" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<span
-																class="elementor-heading-title elementor-size-default">
-																Schedule a no-obligation consultation call with our
-																delivery team to discuss your master data management
-																challenges
-															</span>
-														</div>
-
-													</div>
-												</div>
-											</div>
-										</div>
+									
 										<div class="elementor-element elementor-element-5e61afe e-con-full e-flex e-con e-child"
 											data-id="5e61afe" data-element_type="container">
 											<div class="elementor-element elementor-element-9e3070e elementor-widget elementor-widget-heading"
@@ -3675,7 +3365,7 @@
 														<div class="elementor-cta">
 															<div class="elementor-cta__bg-wrapper">
 																<div class="elementor-cta__bg elementor-bg"
-																	style="background-image: url(https://www.verdantis.com/wp-content/uploads/2025/05/drawing-wind-turbine-with-word-energy-it-scaled.jpg);"
+																	style="background-image: url(./assets/optimization.jpg);"
 																	role="img" aria-label="MRO Spend Analysis"></div>
 																<div class="elementor-cta__bg-overlay"></div>
 															</div>
@@ -4329,20 +4019,7 @@
 									<div class="elementor-element elementor-element-60137c6 e-flex e-con-boxed e-con e-parent"
 										data-id="60137c6" data-element_type="container">
 										<div class="e-con-inner">
-											<div class="elementor-element elementor-element-6e7f24a elementor-widget elementor-widget-image"
-												data-id="6e7f24a" data-element_type="widget"
-												data-widget_type="image.default">
-												<div class="elementor-widget-container">
-													<img fetchpriority="high" fetchpriority="high" decoding="async"
-														width="800" height="800"
-														src="https://www.verdantis.com/wp-content/uploads/2024/10/Materials-Master-Data-Management-2-1024x1024.png"
-														class="attachment-large size-large wp-image-27818"
-														alt="Materials Master Data Management"
-														srcset="https://www.verdantis.com/wp-content/uploads/2024/10/Materials-Master-Data-Management-2-1024x1024.png 1024w, https://www.verdantis.com/wp-content/uploads/2024/10/Materials-Master-Data-Management-2-300x300.png 300w, https://www.verdantis.com/wp-content/uploads/2024/10/Materials-Master-Data-Management-2-150x150.png 150w, https://www.verdantis.com/wp-content/uploads/2024/10/Materials-Master-Data-Management-2-768x768.png 768w, https://www.verdantis.com/wp-content/uploads/2024/10/Materials-Master-Data-Management-2-24x24.png 24w, https://www.verdantis.com/wp-content/uploads/2024/10/Materials-Master-Data-Management-2-48x48.png 48w, https://www.verdantis.com/wp-content/uploads/2024/10/Materials-Master-Data-Management-2-96x96.png 96w, https://www.verdantis.com/wp-content/uploads/2024/10/Materials-Master-Data-Management-2.png 1080w"
-														sizes="(max-width: 800px) 100vw, 800px"
-														title="Materials Master Data Management 1">
-												</div>
-											</div>
+										
 											<div class="elementor-element elementor-element-bd297c2 elementor-widget elementor-widget-text-editor"
 												data-id="bd297c2" data-element_type="widget"
 												data-widget_type="text-editor.default">
@@ -4377,19 +4054,7 @@
 												</div>
 
 											</div>
-											<div class="elementor-element elementor-element-15813af elementor-widget elementor-widget-image"
-												data-id="15813af" data-element_type="widget"
-												data-widget_type="image.default">
-												<div class="elementor-widget-container">
-													<img decoding="async" width="800" height="279"
-														src="https://www.verdantis.com/wp-content/uploads/2024/10/ERP-Implementation-1024x357.png"
-														class="attachment-large size-large wp-image-33709"
-														alt="ERP Implementation"
-														srcset="https://www.verdantis.com/wp-content/uploads/2024/10/ERP-Implementation-1024x357.png 1024w, https://www.verdantis.com/wp-content/uploads/2024/10/ERP-Implementation-300x105.png 300w, https://www.verdantis.com/wp-content/uploads/2024/10/ERP-Implementation-768x268.png 768w, https://www.verdantis.com/wp-content/uploads/2024/10/ERP-Implementation-1536x536.png 1536w, https://www.verdantis.com/wp-content/uploads/2024/10/ERP-Implementation-2048x714.png 2048w, https://www.verdantis.com/wp-content/uploads/2024/10/ERP-Implementation-18x6.png 18w"
-														sizes="(max-width: 800px) 100vw, 800px"
-														title="Materials Master Data Management 2">
-												</div>
-											</div>
+									
 											<div class="elementor-element elementor-element-65fa306 elementor-widget elementor-widget-text-editor"
 												data-id="65fa306" data-element_type="widget"
 												data-widget_type="text-editor.default">
@@ -4490,15 +4155,7 @@
 											<div class="elementor-element elementor-element-9361d16 elementor-widget elementor-widget-image"
 												data-id="9361d16" data-element_type="widget"
 												data-widget_type="image.default">
-												<div class="elementor-widget-container">
-													<img decoding="async" width="800" height="277"
-														src="https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-Integrated-1024x354.png"
-														class="attachment-large size-large wp-image-33700"
-														alt="MDM ERP Integrated"
-														srcset="https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-Integrated-1024x354.png 1024w, https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-Integrated-300x104.png 300w, https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-Integrated-768x265.png 768w, https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-Integrated-1536x530.png 1536w, https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-Integrated-2048x707.png 2048w, https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-Integrated-18x6.png 18w"
-														sizes="(max-width: 800px) 100vw, 800px"
-														title="Materials Master Data Management 3">
-												</div>
+											
 											</div>
 											<div class="elementor-element elementor-element-795bcec elementor-widget elementor-widget-text-editor"
 												data-id="795bcec" data-element_type="widget"
@@ -4523,15 +4180,7 @@
 											<div class="elementor-element elementor-element-c66a2a0 elementor-widget elementor-widget-image"
 												data-id="c66a2a0" data-element_type="widget"
 												data-widget_type="image.default">
-												<div class="elementor-widget-container">
-													<img loading="lazy" loading="lazy" decoding="async" width="800"
-														height="291"
-														src="https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-1024x373.png"
-														class="attachment-large size-large wp-image-33701" alt="MDM ERP"
-														srcset="https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-1024x373.png 1024w, https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-300x109.png 300w, https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-768x280.png 768w, https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-1536x560.png 1536w, https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-2048x746.png 2048w, https://www.verdantis.com/wp-content/uploads/2024/10/MDM-ERP-18x7.png 18w"
-														sizes="(max-width: 800px) 100vw, 800px"
-														title="Materials Master Data Management 4">
-												</div>
+												
 											</div>
 											<div class="elementor-element elementor-element-00c8420 elementor-widget elementor-widget-heading"
 												data-id="00c8420" data-element_type="widget"
@@ -4663,9 +4312,7 @@
 															<div class="elementor-widget-container">
 																<div class="elementor-shortcode">
 
-																	<!-- Download Button -->
-																	<button id="openModalMMDM"
-																		class="dwn_btn_mordan">Download</button>
+															
 
 																	<!-- Modal Structure -->
 																	<div id="modalMMDM" class="modal-DPBSF">
@@ -4827,19 +4474,7 @@
 													</div>
 												</div>
 
-												<div class="elementor-element elementor-element-777a361 elementor-widget elementor-widget-image"
-													data-id="777a361" data-element_type="widget"
-													data-widget_type="image.default">
-													<div class="elementor-widget-container">
-														<img loading="lazy" loading="lazy" decoding="async" width="800"
-															height="432"
-															src="https://www.verdantis.com/wp-content/uploads/2024/10/ERP.jpg"
-															class="attachment-large size-large wp-image-33732" alt="ERP"
-															srcset="https://www.verdantis.com/wp-content/uploads/2024/10/ERP.jpg 887w, https://www.verdantis.com/wp-content/uploads/2024/10/ERP-300x162.jpg 300w, https://www.verdantis.com/wp-content/uploads/2024/10/ERP-768x415.jpg 768w, https://www.verdantis.com/wp-content/uploads/2024/10/ERP-18x10.jpg 18w"
-															sizes="(max-width: 800px) 100vw, 800px"
-															title="Materials Master Data Management 5">
-													</div>
-												</div>
+											
 												<div class="elementor-element elementor-element-e52ed81 elementor-widget elementor-widget-heading"
 													data-id="e52ed81" data-element_type="widget"
 													data-widget_type="heading.default">
