@@ -4032,352 +4032,192 @@
                 </div>
               </div>
               <div
-                class="elementor-element elementor-element-f5d93a0 e-con-full form1 e-flex e-con e-child"
-                data-id="f5d93a0"
-                data-element_type="container"
-                data-settings='{"background_background":"classic"}'
-              >
-                <div
-                  class="elementor-element elementor-element-579f26c elementor-widget elementor-widget-metform"
-                  data-id="579f26c"
-                  data-element_type="widget"
-                  data-widget_type="metform.default"
-                >
-                  <div class="elementor-widget-container">
-                    <div
-                      id="mf-response-props-id-21674"
-                      data-previous-steps-style=""
-                      data-editswitchopen=""
-                      data-response_type="alert"
-                      data-erroricon="fas fa-exclamation-triangle"
-                      data-successicon="fas fa-check"
-                      data-messageposition="top"
-                      class="mf-scroll-top-no"
-                    >
-                      <div
-                        class="formpicker_warper formpicker_warper_editable"
-                        data-metform-formpicker-key="21674"
-                      >
-                        <div class="mf-widget-container">
-                          <div
-                            id="metform-wrap-579f26c-21674"
-                            class="mf-form-wrapper"
-                            data-form-id="21674"
-                            data-action="https://www.verdantis.com/wp-json/metform/v1/entries/insert/21674"
-                            data-wp-nonce="c8c2ac8484"
-                            data-form-nonce="3423a933ec"
-                            data-quiz-summery="false"
-                            data-save-progress="false"
-                            data-form-type="general-form"
-                            data-stop-vertical-effect=""
-                          ></div>
+        class="elementor-element elementor-element-8bce965 e-flex e-con-boxed e-con e-parent"
+        data-id="8bce965"
+        data-element_type="container"
+      >
+        <div class="e-con-inner">
+          <!-- appfinity formone ends -->
 
-                          <!----------------------------- 
-			* controls_data : find the the props passed indie of data attribute
-			* props.SubmitResponseMarkup : contains the markup of error or success message
-			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-		--------------------------- -->
-
-                          <script type="text/mf" class="mf-template">
-                            	function controls_data (value){
-                            		let currentWrapper = "mf-response-props-id-21674";
-                            		let currentEl = document.getElementById(currentWrapper);
-
-                            		return currentEl ? currentEl.dataset[value] : false
-                            	}
-
-
-                            	let is_edit_mode = '' ? true : false;
-                            	let message_position = controls_data('messageposition') || 'top';
-
-
-                            	let message_successIcon = controls_data('successicon') || '';
-                            	let message_errorIcon = controls_data('erroricon') || '';
-                            	let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false;
-                            	let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : '';
-
-                            	let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false;
-
-
-                            	return html`
-                            		<form
-                            			className="metform-form-content"
-                            			ref=${parent.formContainerRef}
-                            			onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) }
-
-                            			>
-
-
-                            			${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-                            			${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-
-                            			<!--------------------------------------------------------
-                            			*** IMPORTANT / DANGEROUS ***
-                            			${html``} must be used as in immediate child of "metform-form-main-wrapper"
-                            			class otherwise multistep form will not run at all
-                            			---------------------------------------------------------->
-
-                            			<div className="metform-form-main-wrapper" key=${'hide-form-after-submit'} ref=${parent.formRef}>
-                            			${html`
-                            						<div data-elementor-type="wp-post" key="2" data-elementor-id="21674" className="elementor elementor-21674" data-elementor-post-type="metform-form">
-                            				<section className="elementor-section elementor-top-section elementor-element elementor-element-59536bb elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="59536bb" data-element_type="section">
-                            				<div className="elementor-container elementor-column-gap-default">
-                            			<div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a66fed0" data-id="a66fed0" data-element_type="column">
-                            	<div className="elementor-widget-wrap elementor-element-populated">
-                            				<section className="elementor-section elementor-inner-section elementor-element elementor-element-9e68aac elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9e68aac" data-element_type="section">
-                            				<div className="elementor-container elementor-column-gap-default">
-                            			<div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ef0ee3a" data-id="ef0ee3a" data-element_type="column">
-                            	<div className="elementor-widget-wrap elementor-element-populated">
-                            				<div className="elementor-element elementor-element-f7ef3f0 elementor-widget elementor-widget-mf-text" data-id="f7ef3f0" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-first-name&quot;}" data-widget_type="mf-text.default">
-                            		<div className="elementor-widget-container">
-
-                            <div className="mf-input-wrapper">
-                            					<label className="mf-input-label" htmlFor="mf-input-text-f7ef3f0">
-                            			${ parent.decodeEntities(`Full Name`) } 					<span className="mf-input-required-indicator">*</span>
-                            		</label>
-
-                            	<input
-                            		type="text"
-                            		className="mf-input mf-conditional-input"
-                            		id="mf-input-text-f7ef3f0"
-                            		name="mf-first-name"
-                            		placeholder="${ parent.decodeEntities(`Your name here`) } "
-                            							onInput=${parent.handleChange}
-                            			onBlur=${parent.handleChange}
-                            			aria-invalid=${validation.errors['mf-first-name'] ? 'true' : 'false'}
-                            			ref=${el =>{
-                            										parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)
-                            			}}
-                            						/>
-
-                            					<${validation.ErrorMessage}
-                            			errors=${validation.errors}
-                            			name="mf-first-name"
-                            			as=${html`<span className="mf-error-message"></span>`}
-                            			/>
-
-                            			</div>
-
-                            				</div>
-                            		</div>
-                            			</div>
-                            </div>
-                            		<div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0d2cba2" data-id="0d2cba2" data-element_type="column">
-                            	<div className="elementor-widget-wrap elementor-element-populated">
-                            				<div className="elementor-element elementor-element-ebe01a2 elementor-widget elementor-widget-mf-email" data-id="ebe01a2" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-email&quot;}" data-widget_type="mf-email.default">
-                            		<div className="elementor-widget-container">
-
-                            <div className="mf-input-wrapper">
-                            					<label className="mf-input-label" htmlFor="mf-input-email-ebe01a2">
-                            			${ parent.decodeEntities(`Business Email`) } 					<span className="mf-input-required-indicator">*</span>
-                            		</label>
-
-                            	<input
-                            		type="email"
-
-                            		defaultValue=""
-                            		className="mf-input mf-conditional-input"
-                            		id="mf-input-email-ebe01a2"
-                            		name="mf-email"
-                            		placeholder="${ parent.decodeEntities(`Add email`) } "
-
-                            		onBlur=${parent.handleChange} onFocus=${parent.handleChange} aria-invalid=${validation.errors['mf-email'] ? 'true' : 'false' }
-                            		ref=${el=> parent.activateValidation({"message":"This field is required.","emailMessage":"Please enter a valid Email address","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)}
-                            					/>
-
-                            				<${validation.ErrorMessage}
-                            		errors=${validation.errors}
-                            		name="mf-email"
-                            		as=${html`<span className="mf-error-message"></span>`}
-                            	/>
-
-                            			</div>
-
-                            		</div>
-                            		</div>
-                            			</div>
-                            </div>
-                            			</div>
-                            </section>
-                            		<section className="elementor-section elementor-inner-section elementor-element elementor-element-16214de elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="16214de" data-element_type="section">
-                            				<div className="elementor-container elementor-column-gap-default">
-                            			<div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-09ec35e" data-id="09ec35e" data-element_type="column">
-                            	<div className="elementor-widget-wrap elementor-element-populated">
-                            				<div className="elementor-element elementor-element-22f1087 elementor-widget elementor-widget-mf-text" data-id="22f1087" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-subject&quot;}" data-widget_type="mf-text.default">
-                            		<div className="elementor-widget-container">
-
-                            <div className="mf-input-wrapper">
-                            					<label className="mf-input-label" htmlFor="mf-input-text-22f1087">
-                            			${ parent.decodeEntities(`Company`) } 					<span className="mf-input-required-indicator">*</span>
-                            		</label>
-
-                            	<input
-                            		type="text"
-                            		className="mf-input mf-conditional-input"
-                            		id="mf-input-text-22f1087"
-                            		name="mf-subject"
-                            		placeholder="${ parent.decodeEntities(`Company`) } "
-                            							onInput=${parent.handleChange}
-                            			onBlur=${parent.handleChange}
-                            			aria-invalid=${validation.errors['mf-subject'] ? 'true' : 'false'}
-                            			ref=${el =>{
-                            										parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)
-                            			}}
-                            						/>
-
-                            					<${validation.ErrorMessage}
-                            			errors=${validation.errors}
-                            			name="mf-subject"
-                            			as=${html`<span className="mf-error-message"></span>`}
-                            			/>
-
-                            			</div>
-
-                            				</div>
-                            		</div>
-                            			</div>
-                            </div>
-                            		<div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8b1faf4" data-id="8b1faf4" data-element_type="column">
-                            	<div className="elementor-widget-wrap elementor-element-populated">
-                            				<div className="elementor-element elementor-element-33e9853 elementor-widget elementor-widget-mf-text" data-id="33e9853" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-subject&quot;}" data-widget_type="mf-text.default">
-                            		<div className="elementor-widget-container">
-
-                            <div className="mf-input-wrapper">
-                            					<label className="mf-input-label" htmlFor="mf-input-text-33e9853">
-                            			${ parent.decodeEntities(`Phone`) } 					<span className="mf-input-required-indicator">*</span>
-                            		</label>
-
-                            	<input
-                            		type="text"
-                            		className="mf-input mf-conditional-input"
-                            		id="mf-input-text-33e9853"
-                            		name="mf-subject"
-                            		placeholder="${ parent.decodeEntities(`Phone Number`) } "
-                            							onInput=${parent.handleChange}
-                            			onBlur=${parent.handleChange}
-                            			aria-invalid=${validation.errors['mf-subject'] ? 'true' : 'false'}
-                            			ref=${el =>{
-                            										parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)
-                            			}}
-                            						/>
-
-                            					<${validation.ErrorMessage}
-                            			errors=${validation.errors}
-                            			name="mf-subject"
-                            			as=${html`<span className="mf-error-message"></span>`}
-                            			/>
-
-                            			</div>
-
-                            				</div>
-                            		</div>
-                            			</div>
-                            </div>
-                            			</div>
-                            </section>
-                            		<section className="elementor-section elementor-inner-section elementor-element elementor-element-54e2f7d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="54e2f7d" data-element_type="section">
-                            				<div className="elementor-container elementor-column-gap-default">
-                            			<div className="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b33cf7a" data-id="b33cf7a" data-element_type="column">
-                            	<div className="elementor-widget-wrap elementor-element-populated">
-                            				<div className="elementor-element elementor-element-b50836a elementor-widget elementor-widget-mf-text" data-id="b50836a" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-last-name&quot;}" data-widget_type="mf-text.default">
-                            		<div className="elementor-widget-container">
-
-                            <div className="mf-input-wrapper">
-                            					<label className="mf-input-label" htmlFor="mf-input-text-b50836a">
-                            			${ parent.decodeEntities(`Country`) } 					<span className="mf-input-required-indicator"></span>
-                            		</label>
-
-                            	<input
-                            		type="text"
-                            		className="mf-input mf-conditional-input"
-                            		id="mf-input-text-b50836a"
-                            		name="mf-last-name"
-                            		placeholder="${ parent.decodeEntities(`Country`) } "
-                            							onInput=${parent.handleChange}
-                            			onBlur=${parent.handleChange}
-                            			aria-invalid=${validation.errors['mf-last-name'] ? 'true' : 'false'}
-                            			ref=${el =>{
-                            										parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)
-                            			}}
-                            						/>
-
-                            					<${validation.ErrorMessage}
-                            			errors=${validation.errors}
-                            			name="mf-last-name"
-                            			as=${html`<span className="mf-error-message"></span>`}
-                            			/>
-
-                            			</div>
-
-                            				</div>
-                            		</div>
-                            			</div>
-                            </div>
-                            			</div>
-                            </section>
-                            		<section className="elementor-section elementor-inner-section elementor-element elementor-element-cc66f99 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cc66f99" data-element_type="section">
-                            				<div className="elementor-container elementor-column-gap-default">
-                            			<div className="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-cbafbf6" data-id="cbafbf6" data-element_type="column">
-                            	<div className="elementor-widget-wrap elementor-element-populated">
-                            				<div className="elementor-element elementor-element-30838c6 elementor-widget elementor-widget-mf-textarea" data-id="30838c6" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-comment&quot;}" data-widget_type="mf-textarea.default">
-                            		<div className="elementor-widget-container">
-
-                            <div className="mf-input-wrapper">
-                            					<label className="mf-input-label" htmlFor="mf-input-text-area-30838c6">
-                            			${ parent.decodeEntities(`Message`) } 					<span className="mf-input-required-indicator"></span>
-                            		</label>
-
-                            	<textarea className="mf-input mf-textarea mf-conditional-input" id="mf-input-text-area-30838c6"
-                            		name="mf-comment"
-                            		placeholder="${ parent.decodeEntities(`Message`) } "
-                            		cols="30" rows="10"
-                            							onInput=${ parent.handleChange }
-                            			aria-invalid=${validation.errors['mf-comment'] ? 'true' : 'false'}
-                            			ref=${ el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)}
-                            						></textarea>
-
-                            					<${validation.ErrorMessage}
-                            			errors=${validation.errors}
-                            			name="mf-comment"
-                            			as=${html`<span className="mf-error-message"></span>`}
-                            			/>
-                            						</div>
-
-                            				</div>
-                            		</div>
-                            		<div className="elementor-element elementor-element-9bd15ec elementor-widget__width-initial elementor-widget elementor-widget-mf-button" data-id="9bd15ec" data-element_type="widget" data-widget_type="mf-button.default">
-                            		<div className="elementor-widget-container">
-                            					<div className="mf-btn-wraper mf-conditional-input" data-mf-form-conditional-logic-requirement="">
-                            					<button type="submit" className="metform-btn metform-submit-btn " id="">
-                            			<span>${ parent.decodeEntities(`Send Message`) } </span>
-                            		</button>
-                            	        </div>
-                                  				</div>
-                            		</div>
-                            			</div>
-                            </div>
-                            			</div>
-                            </section>
-                            			</div>
-                            </div>
-                            			</div>
-                            </section>
-                            		</div>
-                            					`}
-                            			</div>
-
-                            			${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-                            			${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-
-                            		</form>
-                            	`
-                          </script>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div
+          style="
+            background-color: #0a0f2c;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            border-radius: 10px;
+            width: 500px;
+            color: white;
+            z-index: 999;
+          "
+        >
+          <form
+            id="appfinityForm"
+            style="display: flex; flex-direction: column; gap: 15px"
+          >
+            <!-- Row 1 -->
+            <div style="display: flex; gap: 15px">
+              <div style="flex: 1">
+                <label>Full Name <span style="color: red">*</span></label
+                ><br />
+                <input
+                  type="text"
+                  name="fullName"
+                  placeholder="Your name here"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                  "
+                />
               </div>
+              <div style="flex: 1">
+                <label>Business Email <span style="color: red">*</span></label
+                ><br />
+                <input
+                  type="email"
+                  name="businessEmail"
+                  placeholder="Add email"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                  "
+                />
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div style="display: flex; gap: 15px">
+              <div style="flex: 1">
+                <label>Company <span style="color: red">*</span></label
+                ><br />
+                <input
+                  type="text"
+                  name="company"
+                  placeholder="Company"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                  "
+                />
+              </div>
+              <div style="flex: 1">
+                <label>Phone <span style="color: red">*</span></label
+                ><br />
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone Number"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                  "
+                />
+              </div>
+            </div>
+
+            <!-- Country -->
+            <div>
+              <label>Country</label><br />
+              <input
+                type="text"
+                name="country"
+                placeholder="Country"
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  border: none;
+                  border-radius: 5px;
+                "
+              />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label>Message</label><br />
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="5"
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  border: none;
+                  border-radius: 5px;
+                "
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+              <button
+                type="submit"
+                style="
+                  padding: 10px 20px;
+                  background-color: #3c82f4;
+                  color: white;
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+                "
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <script>
+          const form = document.getElementById("appfinityForm");
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            console.log("Form Data:", data);
+
+            fetch(
+              "https://boxer-patient-slowly.ngrok-free.app/appfinity-form-submission",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+              }
+            )
+              .then((response) => {
+                if (!response.ok) {
+                  throw new Error("Network response was not ok");
+                }
+                return response.json();
+              })
+              .then((result) => {
+                console.log("Success:", result);
+                alert("Message sent successfully!");
+                form.reset();
+              })
+              .catch((error) => {
+                console.error("Error sending message:", error);
+                alert("There was an error sending message.");
+              });
+          });
+        </script>
+
+        <!-- appfinity formone ends -->
+        </div>
+      </div>
             </div>
           </div>
           <div
