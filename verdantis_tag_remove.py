@@ -11,9 +11,8 @@ Andheri East, Mumbai – 400059"""
 
 # Address 2 (USA)
 OLD_ADDRESS_2_KEY = "Princeton, NJ"
-NEW_ADDRESS_2 = """500 Alexander Park,<br>
-Suite 101,<br>
-Princeton, NJ 08540, USA"""
+NEW_ADDRESS_2 = """1 A Randolph Avenue,<br>
+Kingston Jamaica"""
 
 def clean_html_file(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
@@ -56,6 +55,26 @@ def clean_html_file(filepath):
                 p.append(soup.new_tag("br"))
             p.contents.pop()  # remove last <br>
             modified = True
+
+    # ✅ Remove social icons div
+    for div in soup.find_all("div", class_="elementor-social-icons-wrapper"):
+        if "elementor-grid" in div.get("class", []) and div.get("role") == "list":
+            div.decompose()
+            modified = True
+
+    # ✅ Remove Rank Math Schema script
+    for script in soup.find_all("script", class_="rank-math-schema"):
+        if script.get("type") == "application/ld+json":
+            script.decompose()
+            modified = True
+
+    # ✅ Remove meta tags with "www.verdantis.com"
+    for meta in soup.find_all("meta"):
+        for attr_value in meta.attrs.values():
+            if isinstance(attr_value, str) and "www.verdantis.com" in attr_value:
+                meta.decompose()
+                modified = True
+                break  # Only need to remove once, no need to check more attrs
 
     if modified:
         with open(filepath, "w", encoding="utf-8") as f:
